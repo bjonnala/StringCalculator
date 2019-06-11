@@ -66,20 +66,23 @@ namespace StringCalculator
             for (int i = 0; i < splitnumbers.Length; i++)
             {
                 int num = _utility.ConvertToNumber(splitnumbers[i].Replace("\n", ""));
-                switch (operand)
+                if (num >= 0 && num <= 1000)
                 {
-                    case "+":
-                        output += num;
-                        break;
-                    case "-":
-                        output -= num;
-                        break;
-                    case "*":
-                        output *= num;
-                        break;
-                    case "/":
-                        output /= num;
-                        break;
+                    switch (operand)
+                    {
+                        case "+":
+                            output += num;
+                            break;
+                        case "-":
+                            output -= num;
+                            break;
+                        case "*":
+                            output *= num;
+                            break;
+                        case "/":
+                            output /= num;
+                            break;
+                    }
                 }
                 if (num < 0)
                 {

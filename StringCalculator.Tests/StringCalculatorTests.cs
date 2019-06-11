@@ -106,8 +106,30 @@ namespace StringCalculator.Tests
             Assert.That(ex.Message, Is.EqualTo("negatives not allowed " + input.Trim()));
         }
 
-        
 
+        [TestCase("2,1001")]
+        [TestCase("2,1002")]
+        [TestCase("2,2000")]
+        public void CanHandleNumbersGreaterThan1000(string input)
+        {
+            //// Arrange
+            var expectedOutput = 2;
+            //// Act
+            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            //// Assert
+            Assert.AreEqual(expectedOutput, actualOutput);
+        }
+
+        [TestCase("2,1000")]
+        public void CanHandleNumbersUpto1000(string input)
+        {
+            //// Arrange
+            var expectedOutput = 1002;
+            //// Act
+            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            //// Assert
+            Assert.AreEqual(expectedOutput, actualOutput);
+        }
 
     }
 }
