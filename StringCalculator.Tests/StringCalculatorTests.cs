@@ -48,7 +48,18 @@ namespace StringCalculator.Tests
             Assert.AreEqual(expectedOutput, actualOutput);
         }
 
-        
+        [TestCase("1,34,4,2,98,1,2")]
+        public void CanHandleUnknownAmountOfNumbers(string input)
+        {
+            //// Arrange
+            var expectedOutput = 142;
+            //// Act
+            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            //// Assert
+            Assert.AreEqual(expectedOutput, actualOutput);
+        }
+
+
 
 
     }
