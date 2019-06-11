@@ -97,6 +97,17 @@ namespace StringCalculator.Tests
             Assert.AreEqual(expectedOutput, actualOutput);
         }
 
+        [TestCase("-1")]
+        [TestCase("-1,-4")]
+        [TestCase("-1,-3,-4")]
+        public void ThrowExceptionForNegativeNumbers(string input)
+        {
+            var ex = Assert.Throws<ArgumentException>(() => _stringcalService.Operation(operand, input.Trim()));
+            Assert.That(ex.Message, Is.EqualTo("negatives not allowed " + input.Trim()));
+        }
+
+        
+
 
     }
 }
