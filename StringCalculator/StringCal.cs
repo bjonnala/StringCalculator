@@ -19,19 +19,27 @@ namespace StringCalculator
             string delimiter = ",";
             string[] delimiterChars = new string[input.Length];
 
-            string[] tempstr = input.Split(delimiter[0]);
-            if (tempstr.Length > 1)
+            if (input.StartsWith("//"))
             {
-                for (int i = 1; i < tempstr.Length; i++)
+                string[] tempstr = input.Split('\n');
+                input = input.Substring(input.IndexOf("\n"));
+                delimiter = tempstr[0][2].ToString();
+            }
+            else
+            {
+                string[] tempstr = input.Split(delimiter[0]);
+                if (tempstr.Length > 1)
                 {
-                    if (string.IsNullOrWhiteSpace(tempstr[i]))
+                    for (int i = 1; i < tempstr.Length; i++)
                     {
-                        throw new ArgumentException("Invalid Input");
+                        if (string.IsNullOrWhiteSpace(tempstr[i]))
+                        {
+                            throw new ArgumentException("Invalid Input");
+                        }
                     }
                 }
+                input = input.Replace("\n", delimiter);
             }
-            input = input.Replace("\n", delimiter);
-
             if (useDefaultDelimiter)
             {
                 if (input.IndexOf("\n") != -1)

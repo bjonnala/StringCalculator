@@ -82,7 +82,20 @@ namespace StringCalculator.Tests
             Assert.That(ex.Message, Is.EqualTo("Invalid Input"));
         }
 
-
+        [TestCase("//;\n1;2")]
+        [TestCase("//,\n1,2")]
+        [TestCase("//&\n1&2")]
+        [TestCase("//$\n1$2")]
+        [TestCase("//@\n1@2")]
+        public void CanHandleVariousDelimitersBetweenNumbers(string input)
+        {
+            //// Arrange
+            var expectedOutput = 3;
+            //// Act
+            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            //// Assert
+            Assert.AreEqual(expectedOutput, actualOutput);
+        }
 
 
     }
