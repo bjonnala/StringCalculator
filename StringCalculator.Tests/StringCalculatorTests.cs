@@ -59,6 +59,29 @@ namespace StringCalculator.Tests
             Assert.AreEqual(expectedOutput, actualOutput);
         }
 
+        [TestCase("0\n,3,3")]
+        [TestCase("1\n,2,3")]
+        public void CanHandleNewLinesBetweenNumbers(string input)
+        {
+            //// Arrange
+            var expectedOutput = 6;
+            //// Act
+            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            //// Assert
+            Assert.AreEqual(expectedOutput, actualOutput);
+        }
+
+        [TestCase("1,\n")]
+        [TestCase("2,\n")]
+        [TestCase("1,\n,3")]
+        [TestCase("1,5,\n")]
+        [TestCase("1,2,3,\n")]
+        public void CanHandleNewLinesBetweenNumbersIncorrectCase(string input)
+        {
+            var ex = Assert.Throws<ArgumentException>(() => _stringcalService.Operation(operand, input.Trim()));
+            Assert.That(ex.Message, Is.EqualTo("Invalid Input"));
+        }
+
 
 
 
