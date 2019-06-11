@@ -1,0 +1,17 @@
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\nunit.engine.dll
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\nunit.engine.api.dll
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\StringCalculator.Tests.dll
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\StringCalculator.Tests.pdb
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\nunit.framework.dll
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\StringCalculator.exe
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\StringCalculator.pdb
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\StringCalculator.exe.config
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\nunit.framework.pdb
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\bin\Debug\nunit.framework.xml
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\obj\Debug\StringCalculator.Tests.csprojAssemblyReference.cache
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\obj\Debug\StringCalculator.Tests.csproj.CoreCompileInputs.cache
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\obj\Debug\StringCalculator.Tests.csproj.CopyComplete
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\obj\Debug\StringCalculator.Tests.dll
+C:\Users\rzj\source\repos\StringCalculator\StringCalculator.Tests\obj\Debug\StringCalculator.Tests.pdb
