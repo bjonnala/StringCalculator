@@ -1,0 +1,248 @@
+Group Name: StringCalculatorTests
+Group By: Class
+Group Full Name: StringCalculatorTests
+Duration: 0:00:00.0460025
+0 test(s) failed
+0 test(s) skipped
+30 test(s) passed
+
+Result1 Name:	CanHandleDelimitersOfAnyLengthAndFormat("//[***]\n1***2***3")
+Result1 Outcome:	Passed
+Result1 Duration:	0:00:00.029
+Result1 StackTrace:
+Result1 Message:
+Result1 StandardOutput:
+Result1 StandardError:
+
+Result2 Name:	CanHandleEmptyNumbers("")
+Result2 Outcome:	Passed
+Result2 Duration:	0:00:00.0000001
+Result2 StackTrace:
+Result2 Message:
+Result2 StandardOutput:
+Result2 StandardError:
+
+Result3 Name:	CanHandleMultipleDelimiters("//[*][%]\n1*2%3")
+Result3 Outcome:	Passed
+Result3 Duration:	0:00:00.0000001
+Result3 StackTrace:
+Result3 Message:
+Result3 StandardOutput:
+Result3 StandardError:
+
+Result4 Name:	CanHandleNewLinesBetweenNumbers("0\n,3,3")
+Result4 Outcome:	Passed
+Result4 Duration:	0:00:00.001
+Result4 StackTrace:
+Result4 Message:
+Result4 StandardOutput:
+Result4 StandardError:
+
+Result5 Name:	CanHandleNewLinesBetweenNumbers("1\n,2,3")
+Result5 Outcome:	Passed
+Result5 Duration:	0:00:00.0000001
+Result5 StackTrace:
+Result5 Message:
+Result5 StandardOutput:
+Result5 StandardError:
+
+Result6 Name:	CanHandleNewLinesBetweenNumbersIncorrectCase("1,\n")
+Result6 Outcome:	Passed
+Result6 Duration:	0:00:00.011
+Result6 StackTrace:
+Result6 Message:
+Result6 StandardOutput:
+Result6 StandardError:
+
+Result7 Name:	CanHandleNewLinesBetweenNumbersIncorrectCase("1,\n,3")
+Result7 Outcome:	Passed
+Result7 Duration:	0:00:00.0000001
+Result7 StackTrace:
+Result7 Message:
+Result7 StandardOutput:
+Result7 StandardError:
+
+Result8 Name:	CanHandleNewLinesBetweenNumbersIncorrectCase("1,2,3,\n")
+Result8 Outcome:	Passed
+Result8 Duration:	0:00:00.0000001
+Result8 StackTrace:
+Result8 Message:
+Result8 StandardOutput:
+Result8 StandardError:
+
+Result9 Name:	CanHandleNewLinesBetweenNumbersIncorrectCase("1,5,\n")
+Result9 Outcome:	Passed
+Result9 Duration:	0:00:00.0000001
+Result9 StackTrace:
+Result9 Message:
+Result9 StandardOutput:
+Result9 StandardError:
+
+Result10 Name:	CanHandleNewLinesBetweenNumbersIncorrectCase("2,\n")
+Result10 Outcome:	Passed
+Result10 Duration:	0:00:00.0000001
+Result10 StackTrace:
+Result10 Message:
+Result10 StandardOutput:
+Result10 StandardError:
+
+Result11 Name:	CanHandleNumbersGreaterThan1000("2,1001")
+Result11 Outcome:	Passed
+Result11 Duration:	0:00:00.0000001
+Result11 StackTrace:
+Result11 Message:
+Result11 StandardOutput:
+Result11 StandardError:
+
+Result12 Name:	CanHandleNumbersGreaterThan1000("2,1002")
+Result12 Outcome:	Passed
+Result12 Duration:	0:00:00.0000001
+Result12 StackTrace:
+Result12 Message:
+Result12 StandardOutput:
+Result12 StandardError:
+
+Result13 Name:	CanHandleNumbersGreaterThan1000("2,2000")
+Result13 Outcome:	Passed
+Result13 Duration:	0:00:00.0000001
+Result13 StackTrace:
+Result13 Message:
+Result13 StandardOutput:
+Result13 StandardError:
+
+Result14 Name:	CanHandleNumbersUpto1000("2,1000")
+Result14 Outcome:	Passed
+Result14 Duration:	0:00:00.0000001
+Result14 StackTrace:
+Result14 Message:
+Result14 StandardOutput:
+Result14 StandardError:
+
+Result15 Name:	CanHandleOneNumber("1")
+Result15 Outcome:	Passed
+Result15 Duration:	0:00:00.0000001
+Result15 StackTrace:
+Result15 Message:
+Result15 StandardOutput:
+Result15 StandardError:
+
+Result16 Name:	CanHandleOneNumber("2")
+Result16 Outcome:	Passed
+Result16 Duration:	0:00:00.0000001
+Result16 StackTrace:
+Result16 Message:
+Result16 StandardOutput:
+Result16 StandardError:
+
+Result17 Name:	CanHandleTwoNumbers("1,2")
+Result17 Outcome:	Passed
+Result17 Duration:	0:00:00.0000001
+Result17 StackTrace:
+Result17 Message:
+Result17 StandardOutput:
+Result17 StandardError:
+
+Result18 Name:	CanHandleUnknownAmountOfNumbers("1,34,4,2,98,1,2")
+Result18 Outcome:	Passed
+Result18 Duration:	0:00:00.0000001
+Result18 StackTrace:
+Result18 Message:
+Result18 StandardOutput:
+Result18 StandardError:
+
+Result19 Name:	CanHandleVariousDelimitersBetweenNumbers("//$\n1$2")
+Result19 Outcome:	Passed
+Result19 Duration:	0:00:00.0000001
+Result19 StackTrace:
+Result19 Message:
+Result19 StandardOutput:
+Result19 StandardError:
+
+Result20 Name:	CanHandleVariousDelimitersBetweenNumbers("//&\n1&2")
+Result20 Outcome:	Passed
+Result20 Duration:	0:00:00.0000001
+Result20 StackTrace:
+Result20 Message:
+Result20 StandardOutput:
+Result20 StandardError:
+
+Result21 Name:	CanHandleVariousDelimitersBetweenNumbers("//,\n1,2")
+Result21 Outcome:	Passed
+Result21 Duration:	0:00:00.0000001
+Result21 StackTrace:
+Result21 Message:
+Result21 StandardOutput:
+Result21 StandardError:
+
+Result22 Name:	CanHandleVariousDelimitersBetweenNumbers("//;\n1;2")
+Result22 Outcome:	Passed
+Result22 Duration:	0:00:00.0000001
+Result22 StackTrace:
+Result22 Message:
+Result22 StandardOutput:
+Result22 StandardError:
+
+Result23 Name:	CanHandleVariousDelimitersBetweenNumbers("//@\n1@2")
+Result23 Outcome:	Passed
+Result23 Duration:	0:00:00.0000001
+Result23 StackTrace:
+Result23 Message:
+Result23 StandardOutput:
+Result23 StandardError:
+
+Result24 Name:	HandleDelimitersLengthLongerThanOneCharacter("//[*****][%%%%%]\n1*****2%%%%%3")
+Result24 Outcome:	Passed
+Result24 Duration:	0:00:00.0000001
+Result24 StackTrace:
+Result24 Message:
+Result24 StandardOutput:
+Result24 StandardError:
+
+Result25 Name:	HandleDelimitersLengthLongerThanOneCharacter("//[****][%%%%]\n1****2%%%%3")
+Result25 Outcome:	Passed
+Result25 Duration:	0:00:00.0000001
+Result25 StackTrace:
+Result25 Message:
+Result25 StandardOutput:
+Result25 StandardError:
+
+Result26 Name:	HandleDelimitersLengthLongerThanOneCharacter("//[***][%%%]\n1***2%%%3")
+Result26 Outcome:	Passed
+Result26 Duration:	0:00:00.0000001
+Result26 StackTrace:
+Result26 Message:
+Result26 StandardOutput:
+Result26 StandardError:
+
+Result27 Name:	HandleDelimitersLengthLongerThanOneCharacter("//[**][%%]\n1**2%%3")
+Result27 Outcome:	Passed
+Result27 Duration:	0:00:00.004
+Result27 StackTrace:
+Result27 Message:
+Result27 StandardOutput:
+Result27 StandardError:
+
+Result28 Name:	ThrowExceptionForNegativeNumbers("-1")
+Result28 Outcome:	Passed
+Result28 Duration:	0:00:00.001
+Result28 StackTrace:
+Result28 Message:
+Result28 StandardOutput:
+Result28 StandardError:
+
+Result29 Name:	ThrowExceptionForNegativeNumbers("-1,-3,-4")
+Result29 Outcome:	Passed
+Result29 Duration:	0:00:00.0000001
+Result29 StackTrace:
+Result29 Message:
+Result29 StandardOutput:
+Result29 StandardError:
+
+Result30 Name:	ThrowExceptionForNegativeNumbers("-1,-4")
+Result30 Outcome:	Passed
+Result30 Duration:	0:00:00.0000001
+Result30 StackTrace:
+Result30 Message:
+Result30 StandardOutput:
+Result30 StandardError:
+
