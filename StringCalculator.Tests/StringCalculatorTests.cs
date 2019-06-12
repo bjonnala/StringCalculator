@@ -142,6 +142,15 @@ namespace StringCalculator.Tests
             Assert.AreEqual(expectedOutput, actualOutput);
         }
 
-
+        [TestCase("//[*][%]\n1*2%3")]
+        public void CanHandleMultipleDelimiters(string input)
+        {
+            //// Arrange
+            var expectedOutput = 6;
+            //// Act
+            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            //// Assert
+            Assert.AreEqual(expectedOutput, actualOutput);
+        }
     }
 }

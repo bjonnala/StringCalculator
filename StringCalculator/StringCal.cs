@@ -19,7 +19,7 @@ namespace StringCalculator
             string delimiter = ",";
             string[] delimiterChars = new string[input.Length];
 
-            if (input.StartsWith("//")) //input.Contains("[")
+            if (input.StartsWith("//"))
             {
                 string[] tempstr = input.Split('\n');
                 for (int i = 0; i < tempstr[1].Length; i++)
@@ -32,12 +32,6 @@ namespace StringCalculator
                 input = input.Substring(input.IndexOf("\n"));
                 useDefaultDelimiter = false;
             }
-            /*else if (input.StartsWith("//"))
-            {
-                string[] tempstr = input.Split('\n');
-                input = input.Substring(input.IndexOf("\n"));
-                delimiter = tempstr[0][2].ToString();
-            }*/
             else
             {
                 string[] tempstr = input.Split(delimiter[0]);
