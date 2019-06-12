@@ -7,12 +7,13 @@ namespace StringCalculator.Tests
     public class StringCalculatorTests
     {
         readonly string operand = string.Empty;
-        private readonly IStringCal _stringcalService;
+        private readonly IStringCal _stringcalculator;
 
         public StringCalculatorTests()
         {
+            // Interface to access StringCal concrete class
+            _stringcalculator = new StringCal();
             operand = "+";
-            _stringcalService = new StringCal();
         }
 
         [TestCase("")]
@@ -21,7 +22,7 @@ namespace StringCalculator.Tests
             //// Arrange
             var expectedOutput = 0;
             //// Act
-            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            var actualOutput = _stringcalculator.Operation(operand, input.Trim());
             //// Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
@@ -32,7 +33,7 @@ namespace StringCalculator.Tests
             // Arrange
             var expectedOutput = Int32.Parse(input);
             //// Act
-            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            var actualOutput = _stringcalculator.Operation(operand, input.Trim());
             //// Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
@@ -43,7 +44,7 @@ namespace StringCalculator.Tests
             //// Arrange
             var expectedOutput = 3;
             //// Act
-            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            var actualOutput = _stringcalculator.Operation(operand, input.Trim());
             //// Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
@@ -54,7 +55,7 @@ namespace StringCalculator.Tests
             //// Arrange
             var expectedOutput = 142;
             //// Act
-            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            var actualOutput = _stringcalculator.Operation(operand, input.Trim());
             //// Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
@@ -66,7 +67,7 @@ namespace StringCalculator.Tests
             //// Arrange
             var expectedOutput = 6;
             //// Act
-            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            var actualOutput = _stringcalculator.Operation(operand, input.Trim());
             //// Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
@@ -78,7 +79,7 @@ namespace StringCalculator.Tests
         [TestCase("1,2,3,\n")]
         public void CanHandleNewLinesBetweenNumbersIncorrectCase(string input)
         {
-            var ex = Assert.Throws<ArgumentException>(() => _stringcalService.Operation(operand, input.Trim()));
+            var ex = Assert.Throws<ArgumentException>(() => _stringcalculator.Operation(operand, input.Trim()));
             Assert.That(ex.Message, Is.EqualTo("Invalid Input"));
         }
 
@@ -92,7 +93,7 @@ namespace StringCalculator.Tests
             //// Arrange
             var expectedOutput = 3;
             //// Act
-            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            var actualOutput = _stringcalculator.Operation(operand, input.Trim());
             //// Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
@@ -102,7 +103,7 @@ namespace StringCalculator.Tests
         [TestCase("-1,-3,-4")]
         public void ThrowExceptionForNegativeNumbers(string input)
         {
-            var ex = Assert.Throws<ArgumentException>(() => _stringcalService.Operation(operand, input.Trim()));
+            var ex = Assert.Throws<ArgumentException>(() => _stringcalculator.Operation(operand, input.Trim()));
             Assert.That(ex.Message, Is.EqualTo("negatives not allowed " + input.Trim()));
         }
 
@@ -115,7 +116,7 @@ namespace StringCalculator.Tests
             //// Arrange
             var expectedOutput = 2;
             //// Act
-            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            var actualOutput = _stringcalculator.Operation(operand, input.Trim());
             //// Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
@@ -126,7 +127,7 @@ namespace StringCalculator.Tests
             //// Arrange
             var expectedOutput = 1002;
             //// Act
-            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            var actualOutput = _stringcalculator.Operation(operand, input.Trim());
             //// Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
@@ -137,7 +138,7 @@ namespace StringCalculator.Tests
             //// Arrange
             var expectedOutput = 6;
             //// Act
-            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            var actualOutput = _stringcalculator.Operation(operand, input.Trim());
             //// Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
@@ -148,7 +149,7 @@ namespace StringCalculator.Tests
             //// Arrange
             var expectedOutput = 6;
             //// Act
-            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            var actualOutput = _stringcalculator.Operation(operand, input.Trim());
             //// Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
@@ -162,7 +163,7 @@ namespace StringCalculator.Tests
             //// Arrange
             var expectedOutput = 6;
             //// Act
-            var actualOutput = _stringcalService.Operation(operand, input.Trim());
+            var actualOutput = _stringcalculator.Operation(operand, input.Trim());
             //// Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
